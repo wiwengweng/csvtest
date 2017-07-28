@@ -29,7 +29,7 @@ namespace csvtest
             };
             CsvContext cc = new CsvContext();
             IEnumerable<Patient> products =
-                cc.Read<Patient>("patient.csv", inputFileDescription);
+                cc.Read<Patient>(@"d:/wenyunlong/Documents/Visual Studio 2015/Projects/csvtest/csvtest/patient.csv", inputFileDescription);
             // Data is now available via variable products.
             //var productsByName =
             //    from p in products
@@ -44,7 +44,7 @@ namespace csvtest
                 }
             }
             
-            resultBox.Text = result.ID + "  "+ result.Name + "  " + result.sex + "  " + result.bed + "  " + result.Description;
+            resultBox.Text = "ID"+ "\t"+"名字"+ "\t"+"性别"+ "\t"+"床号" + "\t" + "医院"+"\n"+result.ID + "\t"+ result.Name + "\t" + result.sex + "\t" + result.bed + "\t" + result.hospital;
         }
 
     }
@@ -64,5 +64,7 @@ public class Patient
         public string bed { get; set; }
         [CsvColumn(FieldIndex = 6)]
         public string Description { get; set; }
+        [CsvColumn(FieldIndex = 7)]
+        public string hospital { get; set; }
     }
 }

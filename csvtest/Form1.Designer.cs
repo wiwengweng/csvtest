@@ -40,7 +40,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "提交";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -49,15 +49,15 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(43, 62);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 12);
+            this.label1.Size = new System.Drawing.Size(77, 12);
             this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.label1.Text = "请输入病人ID";
             // 
             // inputID
             // 
-            this.inputID.Location = new System.Drawing.Point(101, 59);
+            this.inputID.Location = new System.Drawing.Point(127, 59);
             this.inputID.Name = "inputID";
-            this.inputID.Size = new System.Drawing.Size(100, 21);
+            this.inputID.Size = new System.Drawing.Size(253, 21);
             this.inputID.TabIndex = 2;
             this.inputID.TextChanged += new System.EventHandler(this.button1_Click);
             // 
@@ -65,6 +65,7 @@
             // 
             this.resultBox.Location = new System.Drawing.Point(45, 94);
             this.resultBox.Name = "resultBox";
+            this.resultBox.ReadOnly = true;
             this.resultBox.Size = new System.Drawing.Size(335, 143);
             this.resultBox.TabIndex = 3;
             this.resultBox.Text = "";
