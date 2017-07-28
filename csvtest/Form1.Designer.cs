@@ -59,6 +59,7 @@
             this.inputID.Name = "inputID";
             this.inputID.Size = new System.Drawing.Size(100, 21);
             this.inputID.TabIndex = 2;
+            this.inputID.TextChanged += new System.EventHandler(this.button1_Click);
             // 
             // resultBox
             // 
